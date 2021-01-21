@@ -7,8 +7,8 @@ public class Task3 {
         Scanner sc = new Scanner(System.in);
         int a = sc.nextInt();
         int b = sc.nextInt();
-        if (a >= b || a <= 0) {
-            System.out.println("некорректный ввод");
+        if (a >= b ) {
+            System.out.println("Некорректный ввод");
         } else {
             while (a < b) {
                 if (a % 5 == 0 && a % 10 != 0) {
