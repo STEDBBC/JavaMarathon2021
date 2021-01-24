@@ -7,9 +7,8 @@ public class Task1 {
         Scanner sc = new Scanner(System.in);
         while (true) {
             String country = sc.nextLine();
-           if (country.equals("Stop")){
+           if (country.equals("Stop"))
                break;
-           }else {
            switch (country) {
                case "Москва":
                case "Владивосток":
@@ -34,7 +33,7 @@ public class Task1 {
                default:
                    System.out.println("Неизвестная страна");
            }
-            }
+
         }
     }
 }
