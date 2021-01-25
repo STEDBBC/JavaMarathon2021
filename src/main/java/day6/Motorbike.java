@@ -1,12 +1,5 @@
-package day5;
+package day6;
 
-
-public class Task2 {
-    public static void main(String[] args) {
-      //  Motorbike myBike = new Motorbike("Красная","Хонда",2005);
-    //    System.out.println(myBike.getColor()+" "+myBike.getModel()+" "+myBike.getYear());
-    }
-}
 
 class Motorbike {
     private String color;
@@ -33,6 +26,18 @@ class Motorbike {
 
     public int getYear() {
         return year;
+    }
+    public Motorbike(String color, String model, int year){
+        this.color=color;
+        this.model=model;
+        this.year=year;
+    }
+    void info() {
+        System.out.println("Этот Мотоцикл");
+    }
+    int yearDifference(int inputYear) {
+        int difference = year - inputYear;
+        return Math.abs(difference);
     }
 
 }
