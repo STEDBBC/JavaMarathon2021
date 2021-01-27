@@ -53,11 +53,12 @@ class Airplane {
     static void compareAirplanes(Airplane airplane, Airplane airplane2) {
         if (airplane.length > airplane2.length) {
             System.out.println("Первый самолет длиннее.");
-        } else {
+        } else if (airplane.length < airplane2.length) {
             System.out.println("Второй самолет длиннее.");
-        }
+        } else System.out.println("Самолеты одинаковой длины");
     }
-    public String toString (){
-        return producer+" "+year+" "+length+" "+weight+" "+fuel;
+
+    public String toString() {
+        return producer + " " + year + " " + length + " " + weight + " " + fuel;
     }
 }
